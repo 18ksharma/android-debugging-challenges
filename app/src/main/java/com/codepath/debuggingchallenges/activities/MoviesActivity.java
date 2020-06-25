@@ -33,6 +33,7 @@ public class MoviesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_movies);
         rvMovies = findViewById(R.id.rvMovies);
 
+        movies = new ArrayList<>();
         // Create the adapter to convert the array to views
         MoviesAdapter adapter = new MoviesAdapter(movies);
 
