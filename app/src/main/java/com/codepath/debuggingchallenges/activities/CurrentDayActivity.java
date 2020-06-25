@@ -14,10 +14,12 @@ public class CurrentDayActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_current_day);
-        tvDay = (TextView) findViewById(R.id.tvDay);
-        tvDay.setText(getDayOfMonth());
+        tvDay = findViewById(R.id.tvDay);
+        //Converts Day of month to string then sets as integer and puts in tvDay on app display
+        tvDay.setText(Integer.toString(getDayOfMonth()));
     }
 
     private int getDayOfMonth() {
